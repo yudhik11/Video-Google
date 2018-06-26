@@ -1,11 +1,15 @@
 clear all;
-data = '/home/yudhik/study/Video-Google/frames';
-num_images = 5;
-all_features = sift(data, num_imgaes);
+data = '/home/yudhik/study/Video-Google/frames/';
+num_images = 10;
+num_clusters = 100;
+[all_features img_features] = SIFT(data, num_images);
 
-[idx, clusters] = kmeans(all_features, 100);
+[idx, clusters] = kmeans(all_features, num_clusters, 'Maxiter', 100, 'Display', 'iter');
+ranking = tf_idf(num_images, num_clusters, img_features, idx);
 
+img = imread('/home/yudhik/study/Video-Google/frame27.png');
 
+predict(img, ranking, clusters);
 
 
 
@@ -24,7 +28,7 @@ d = [d1'; d2'];
 [matches, scores] = vl_ubcmatch(d1, d2) ;
 imshow(img);
 perm = randperm(size(f,2)) ;
-sel = perm(1:1000) ;
+sel = perm(1:30) ;
 h1 = vl_plotframe(f(:,sel)) ;
 h2 = vl_plotframe(f(:,sel)) ;
 set(h1,'color','k','linewidth',3) ;
