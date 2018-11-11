@@ -10,23 +10,23 @@ Looks up for an all the similar image in the the video.
 
 ### Input
 
-![frame90](/home/yudhik/study/Video-Google/frame90.png)
+![frame90](./frame90.png)
 
 ### Output
 
-![output-1](/home/yudhik/study/Video-Google/frames/frame96.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame100.png)
+![output-1](./frames/frame96.png)
+![output-2](./frames/frame100.png)
 
 ### Input
 
-![frame90](/home/yudhik/study/Video-Google/test-1.png)
+![frame90](./test-1.png)
 
 ### Output
 
-![output-1](/home/yudhik/study/Video-Google/frames/frame13.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame19.png)
-![output-20](/home/yudhik/study/Video-Google/frames/frame22.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame46.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame77.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame80.png)
-![output-2](/home/yudhik/study/Video-Google/frames/frame86.png)
+![output-1](./frames/frame13.png)
+![output-2](./frames/frame19.png)
+![output-20](./frames/frame22.png)
+![output-2](./frames/frame46.png)
+![output-2](./frames/frame77.png)
+![output-2](./frames/frame80.png)
+![output-2](./frames/frame86.png)
