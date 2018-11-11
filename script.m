@@ -11,7 +11,7 @@ toc
 
 ranking = tf_idf(num_images, num_clusters, img_features, idx);
 
-img = imread('/home/yudhik/study/Video-Google/frame90.png');
+img = imread('/home/yudhik/study/Video-Google/test-1.png');
 
 imgs = predict(img, ranking, clusters);
 
@@ -31,7 +31,7 @@ d = [d1'; d2'];
 [matches, scores] = vl_ubcmatch(d1, d2) ;
 
 %% plotting the features on the image
-img = imread('/home/yudhik/study/Video-Google/frame90.png');
+img = imread('/home/yudhik/study/Video-Google/frame1.png');
 [f, d] = vl_sift(single(rgb2gray(img)));
 imshow(img);
 idx = [1:size(f,2)];
